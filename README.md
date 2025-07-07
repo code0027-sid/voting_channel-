@@ -1,33 +1,27 @@
 # VoteSync — Secure Online Voting Backend
 
-**VoteSync** is a secure and scalable backend system for managing an online voting platform. Built with Node.js, Express, and MongoDB, it enables user registration, role-based access, vote casting, and candidate management. Each user can vote only once, and only admins can manage candidates.
+VoteSync is a secure and scalable backend system for managing an online voting platform. Built with Node.js, Express, and MongoDB, it enables user registration, role-based access, vote casting, and candidate management. Each user can vote only once, and only admins can manage candidates.
 
 ---
+Features
+Aadhaar-Based User Authentication
+Users can register and log in using their Aadhaar number and password, ensuring secure and unique identification.
 
-## 🔧 Features
+JWT-Based Session Management
+Uses JSON Web Tokens to handle user sessions in a secure and stateless manner.
 
-- 👤 Aadhaar-based user registration & login
-- 🔐 JWT-based authentication for session handling
-- 🗳️ One-vote-per-user logic for fair elections
-- 🧑‍💼 Admin-only access to add, update, or delete candidates
-- 📊 Real-time vote count tracking per candidate
-- 🔐 Role-based access (admin vs user)
+One-Vote-Per-User Logic
+Each registered user is allowed to vote only once, ensuring the integrity of the voting process.
 
----
+Admin-Only Candidate Management
+Only admin users have the ability to add, update, or delete candidates.
 
-## 🛠️ Technologies Used
+Real-Time Vote Count
+Provides up-to-date vote counts for each candidate, sorted by number of votes.
 
-- **Node.js** + **Express.js** — Backend Framework
-- **MongoDB** + **Mongoose** — Database & ODM
-- **JWT (JSON Web Tokens)** — Secure user authentication
-- **dotenv** — Manage environment variables
-- **bcrypt.js** — Secure password hashing
+ Installation & Setup
 
----
-
-## 📦 Installation & Setup
-
-### 1. Clone the repository
+Clone the repository
 
 ```bash
 git clone https://github.com/code0027-sid/votesync-backend.git
